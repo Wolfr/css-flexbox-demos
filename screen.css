@@ -36,6 +36,29 @@ body {
   -webkit-justify-content: center;
 }
 
+.center-this div {
+  background: #DDD;
+  padding: 12px;
+  margin: 12px; /* We can still use margin */
+}
+
+
+/*
+  True vertical centering (with margin auto)
+*/
+
+.center-this-alt {
+  background: #EEE;
+  width: 100%;
+  height: 200px;
+  display: -webkit-flex;
+}
+
+.center-this-alt div {
+  margin: auto;
+  background: #DDD;
+  padding: 12px;
+}
 
 /*
   Spaced out
@@ -84,4 +107,23 @@ body {
   background: #DDD;
   padding: 1%;
   margin: 1%;
+}
+
+/*
+  Fixed + liquid
+*/
+
+.fixed-liquid {
+  display: -webkit-flex;
+  background: #EEE;
+}
+
+.fixed-liquid .fixed {
+  width: 200px;
+  background: #CCC;
+}
+
+.fixed-liquid .liquid {
+  -webkit-flex: 1;
+  background: #DDD;
 }
